@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/main_spaces" android:text="@string/travelName"></TextView>
+	    <EditText android:layout_width="fill_parent" android:id="@+id/editTextTravelName" android:layout_height="wrap_content" android:layout_margin="@dimen/main_spaces" android:gravity="center"></EditText>
+	    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="@string/description"></TextView>
+	    <EditText android:layout_width="fill_parent" android:id="@+id/editTextDescription" android:layout_height="wrap_content" android:layout_margin="@dimen/main_spaces" android:lines="5" android:gravity="top"></EditText>
+	    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView3" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/main_spaces" android:layout_gravity="center_horizontal" android:text="@string/stats_data_partenza"></TextView>
+	    <EditText android:layout_width="fill_parent" android:id="@+id/editTextDateStart" android:layout_height="wrap_content" android:inputType="date" android:layout_marginLeft="@dimen/main_spaces" android:layout_marginRight="@dimen/main_spaces" android:layout_marginBottom="@dimen/main_spaces" android:enabled="false" android:gravity="center_horizontal" android:clickable="false" android:editable="false"></EditText>
+	    <Button android:id="@+id/button1" android:text="@string/edit_start_date" android:onClick="editStartDate"  android:layout_marginBottom="@dimen/main_spaces" android:layout_width="300dip" android:layout_height="fill_parent" android:gravity="center" android:layout_gravity="center_horizontal"></Button>
+	    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView3" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_margin="@dimen/main_spaces" android:layout_marginBottom="@dimen/main_spaces" android:text="@string/stats_data_fine"></TextView>
+	    <EditText android:layout_width="fill_parent" android:id="@+id/editTextDateStop" android:layout_height="wrap_content" android:inputType="date" android:editable="false" android:clickable="false" android:enabled="false" android:layout_gravity="center_horizontal" android:layout_marginLeft="@dimen/main_spaces" android:layout_marginRight="@dimen/main_spaces" android:gravity="center_horizontal" android:layout_marginBottom="@dimen/main_spaces" ></EditText>
+	    <Button 
+			android:id="@+id/saveDateStop" 
+			android:layout_gravity="center" 
+			android:layout_height="fill_parent"
+			android:onClick="saveDateStop" android:layout_width="300dip" android:text="@string/date_stop_input" android:layout_marginBottom="@dimen/main_spaces" >
+		</Button>
+		
+		<Button 
+			android:id="@+id/saveEditTravel" 
+			android:layout_height="fill_parent"
+			android:onClick="saveData" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:text="@string/save" android:visibility="visible" android:layout_margin="@dimen/main_spaces">
+		</Button>
+	</LinearLayout>
+	
+</ScrollView>

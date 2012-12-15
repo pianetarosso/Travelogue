@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id = "@+id/marker_dialog"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	    <SeekBar 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/seekBarRedM" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_margin="@dimen/main_spaces" 
+	    	android:max="255">
+	    </SeekBar>
+	    <SeekBar 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/seekBarGreenM" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_margin="@dimen/main_spaces" 
+	    	android:max="255">
+	    </SeekBar>
+	    <SeekBar 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/seekBarBlueM" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_margin="@dimen/main_spaces" 
+	    	android:max="255">
+	    </SeekBar>
+	    <SeekBar 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/seekBarDim" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_margin="@dimen/main_spaces">
+	    </SeekBar>
+	    
+	   	<ImageView  
+	       	android:id="@+id/markerImageView" 
+	       	android:layout_gravity="center_horizontal" 
+	       	android:visibility="visible" 
+	       	android:layout_height="wrap_content" 
+	       	android:layout_width="wrap_content">
+	    </ImageView>
+	    
+	    <Button 
+	    	android:id="@+id/buttonChangeSMC" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_marginLeft="@dimen/main_spaces" 
+	    	android:layout_marginRight="@dimen/main_spaces" 
+	    	android:layout_marginTop="@dimen/main_spaces">
+	    </Button>
+	    	
+	    <LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content" 
+	  		android:orientation="horizontal">
+	  		
+	        <Button 
+	        	android:id="@+id/reset_colorM_button" 
+	        	android:layout_height="wrap_content" 
+	        	android:layout_alignParentTop="true" 
+	        	android:layout_alignParentLeft="true" 
+	        	android:layout_margin="@dimen/main_spaces" 
+	        	android:text="@string/reset" 
+	        	android:layout_weight="1" 
+	        	android:layout_width="0dp">
+	        </Button>
+	        
+	        <Button 
+	        	android:id="@+id/save_colorM_button" 
+	        	android:layout_height="wrap_content" 
+	       		android:layout_alignParentTop="true" 
+	        	android:layout_alignParentRight="true" 
+	        	android:layout_margin="@dimen/main_spaces" 
+	        	android:text="@string/save" 
+				android:layout_weight="1" 
+				android:layout_width="0dp">
+			</Button>
+	    </LinearLayout>
+	</LinearLayout> 
+</ScrollView>

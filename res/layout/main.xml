@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="wrap_content">
+    
+    <TextView 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/hello" 
+    	android:layout_width="wrap_content" 
+    	android:layout_gravity="center_horizontal" 
+    	android:layout_margin="@dimen/main_spaces"
+    	android:textAppearance="?android:attr/textAppearanceMedium">
+    </TextView>
+   
+    <Button 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/new_Travel" 
+    	android:layout_width="wrap_content" 
+    	android:layout_marginLeft="@dimen/main_spaces" 
+    	android:layout_marginRight="@dimen/main_spaces" 
+    	android:layout_marginTop="@dimen/main_spaces" 
+    	android:layout_marginBottom="@dimen/zero" 
+    	android:layout_gravity="center_horizontal" 
+    	android:onClick="Main_NewTravel">
+    </Button>
+    
+    <Button 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/map" 
+    	android:layout_width="wrap_content" 
+    	android:layout_marginLeft="@dimen/main_spaces" 
+    	android:layout_marginRight="@dimen/main_spaces" 
+    	android:layout_marginTop="@dimen/main_spaces" 
+    	android:layout_marginBottom="@dimen/zero" 
+    	android:text="@string/map" 
+    	android:layout_gravity="center_horizontal" 
+    	android:onClick="Main_Map">
+    </Button>
+    
+    <Button 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/settings" 
+    	android:layout_width="wrap_content" 
+    	android:layout_marginLeft="@dimen/main_spaces" 
+    	android:layout_marginRight="@dimen/main_spaces" 
+    	android:layout_marginTop="@dimen/main_spaces" 
+    	android:layout_marginBottom="@dimen/zero" 
+    	android:text="@string/settings" 
+    	android:layout_gravity="center_horizontal" 
+    	android:onClick="Main_Settings">
+    </Button>
+</TableLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    <item 
+	    android:title="@string/travel" 
+	    android:id="@+id/travelSettings" 
+	    android:menuCategory="container" 
+	    android:visible="true" 
+	    android:orderInCategory="4">
+        <menu>
+	        <item 
+	        	android:id="@+id/editTravel" 
+	        	android:title="@string/edit_travel"/>
+	        <item 
+	        	android:title="@string/stats_travel" 
+	        	android:id="@+id/statsTravel"/>
+	        <item 
+	        	android:id="@+id/changeTravel" 
+	        	android:title="@string/change_travel"/>
+	        <item 
+		    	android:id="@+id/close_travel" 
+		    	android:title="@string/close_travel"/>  
+	 	</menu>
+	</item>
+	    
+    <item 
+    	android:title="@string/map" 
+    	android:id="@+id/mapSettings" 
+    	android:menuCategory="container" 
+    	android:visible="true" 
+    	android:orderInCategory="3">
+        <menu>
+        	<item 
+        		android:id="@+id/map_type" 
+        		android:title="@string/map_type"/>
+        	<item 
+        		android:id="@+id/marker_color" 
+        		android:title="@string/marker_color"/>
+        	<item 
+        		android:id="@+id/route_color" 
+        		android:title="@string/route_color"/>
+        </menu>
+    </item>
+ 
+</menu>

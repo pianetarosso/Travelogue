@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="main_spaces">15dip</dimen>
+	<dimen name="zero">0dip</dimen>
+	<dimen name="double_main_space">30dip</dimen>
+</resources>

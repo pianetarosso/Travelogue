@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="it.DiarioDiViaggio">
+    
+	<uses-sdk android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	
+
+    <permission android:name="it.DiarioDiViaggio.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+
+   <uses-permission android:name="it.DiarioDiViaggio.permission.C2D_MESSAGE"/>
+   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+   <uses-permission android:name="android.permission.WAKE_LOCK"/>
+   <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+   <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+   <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
+        <receiver android:name=".Reboot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    	<receiver android:enabled="true" android:name="it.Alarm.AlarmNotification"/>
+       	<service android:enabled="true" android:name="it.Service.GPS.MonitorService"/>
+    
+       	<activity android:label="@string/app_name" android:name="Main">  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+       	    
+        <activity android:name="it.Alarm.SetAlarms">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="it.Service.Timer.TimerService">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".SetTimer">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        
+        <activity android:label="@string/photogallery" android:name="it.Photos.PhotoGallery">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/settings" android:name=".Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/new_travel_wizard" android:name=".WizardViaggio">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/new_travel_wizard" android:name=".StartTravel">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/edit_travel" android:name=".EditTravel">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/new_travel_wizard" android:name=".TravelWizard">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Backup_Restore">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".DisplayNotification">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <uses-library android:name="com.google.android.maps"/> 
+        <activity android:apiKey="0Kjfsly46ccxfiiOTxjR5LtdtBmvJSfIPFDt_TA" android:label="@string/app_name" android:name="it.DiarioDiViaggio.TravelMap" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".GCMIntentService"/>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="it.DiarioDiViaggio"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="it.DiarioDiViaggio"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

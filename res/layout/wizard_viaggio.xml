@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:orientation="vertical">
+ 
+    <TextView 
+    	android:layout_height="wrap_content" 
+    	android:layout_margin="@dimen/main_spaces" 
+    	android:layout_width="wrap_content" 
+    	android:layout_gravity="center" 
+    	android:text="@string/wizard1">
+    </TextView>
+    	
+    <Button 
+    	android:layout_height="wrap_content" 
+    	android:layout_margin="@dimen/main_spaces"
+    	android:layout_gravity="center_horizontal"  
+    	android:text="@string/configure" 
+    	android:onClick="travel" 
+    	android:layout_width="fill_parent">
+    </Button>
+    
+    <Button 
+    	android:layout_height="wrap_content"
+    	android:layout_margin="@dimen/main_spaces"  
+    	android:layout_gravity="center_horizontal"  
+    	android:text="@string/startNow" 
+    	android:onClick="startNow" 
+    	android:layout_width="fill_parent">
+    </Button>
+</LinearLayout>

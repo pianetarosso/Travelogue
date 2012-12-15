@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation">
+        <item>Data creazione</item>	<!--  0 -->
+        <item>Zoom</item>
+      	<item>Centra ultimo</item> 
+        <item>Mostra tutto</item> 
+    </string-array>
+    
+</resources>

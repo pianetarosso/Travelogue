@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id = "@+id/color_route_dialog"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout  
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	    <SeekBar android:layout_height="wrap_content" android:id="@+id/seekBarRed" android:layout_width="fill_parent" android:layout_margin="@dimen/main_spaces" android:max="255"></SeekBar>
+	    <SeekBar android:layout_height="wrap_content" android:id="@+id/seekBarGreen" android:layout_width="fill_parent" android:layout_margin="@dimen/main_spaces" android:max="255"></SeekBar>
+	    <SeekBar android:layout_height="wrap_content" android:id="@+id/seekBarBlue" android:layout_width="fill_parent" android:layout_margin="@dimen/main_spaces" android:max="255"></SeekBar>
+	    
+	        <ImageView 
+	        	android:src="@drawable/transparent_android" 
+	        	android:id="@+id/androidTransparentImageView" 
+	        	android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+	    
+	    <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content" 
+	  android:orientation="horizontal">
+	        <Button 
+	        	android:id="@+id/reset_color_button" 
+	        	android:layout_height="wrap_content" 
+	        	android:layout_alignParentTop="true" 
+	        	android:layout_alignParentLeft="true" 
+	        	android:layout_margin="@dimen/main_spaces" 
+	        	android:text="@string/reset" 
+	        	android:layout_weight="1" 
+	        	android:layout_width="0dp"></Button>
+	        <Button 
+	        android:id="@+id/save_color_button" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentTop="true" 
+	        android:layout_alignParentRight="true" 
+	        android:layout_margin="@dimen/main_spaces" 
+	        android:text="@string/save" 
+			android:layout_weight="1" 
+			android:layout_width="0dp"></Button>
+	    </LinearLayout>
+	</LinearLayout>
+</ScrollView>

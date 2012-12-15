@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/backupText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/main_spaces"
+        android:text="@string/backupText"/>
+
+    <Button
+        android:id="@+id/backupButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/backupText"
+        android:layout_margin="@dimen/main_spaces"
+        android:text="@string/backupButton" 
+        android:onClick="backup"/>
+
+    <TextView
+        android:id="@+id/restoreText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/main_spaces"
+        android:text="@string/restoreText"/>
+
+    <Button
+        android:id="@+id/restoreButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/restoreText"
+        android:layout_margin="@dimen/main_spaces"
+        android:text="@string/restoreButton" 
+        android:onClick="restore"/>
+
+</RelativeLayout>

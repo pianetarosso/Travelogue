@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id = "@+id/gps_dialog"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+	  	android:orientation="vertical">
+	  
+		<TextView 
+	  		android:textAppearance="?android:attr/textAppearance"  
+	  		android:layout_height="wrap_content" 
+	  		android:layout_width="wrap_content" 
+	  		android:text="@string/gps_settings_change" 
+	  		android:layout_gravity="center_horizontal" 
+	  		android:layout_margin="@dimen/main_spaces">
+	  	</TextView>
+	  
+	  	<EditText 
+	  		android:id="@+id/timeGpsEditText" 
+	  		android:layout_height="wrap_content" 
+	  		android:layout_width="wrap_content" 
+	  		android:layout_gravity="center_horizontal" 
+	  		android:layout_marginTop="@dimen/main_spaces" 
+	  		android:editable="false" 
+	  		android:clickable="false">
+		</EditText>
+		
+	    <SeekBar 
+	    	android:layout_height="wrap_content" 
+	    	android:id="@+id/timeGpsSeekBar" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_margin="@dimen/main_spaces">
+	    </SeekBar>
+	    
+	    <LinearLayout
+	    	android:layout_width="fill_parent"
+	  		android:orientation="horizontal" android:layout_height="wrap_content">
+	  		
+	 		<Button 
+	 			android:layout_height="wrap_content" 
+	 			android:layout_alignParentTop="true" 
+	 			android:layout_alignParentRight="true" 
+	 			android:layout_margin="@dimen/main_spaces" 
+	 			android:text="@string/reset" 
+	 			android:onClick="reset" 
+	 			android:layout_weight="1" 
+	 			android:layout_width="0dp">
+	 		</Button>
+	 		
+	        <Button  
+	        	android:layout_height="wrap_content" 
+	        	android:layout_alignParentTop="true" 
+	        	android:layout_alignParentLeft="true" 
+	        	android:layout_margin="@dimen/main_spaces" 
+	        	android:text="@string/save" 
+	        	android:onClick="save" 
+	        	android:layout_weight="1" 
+	        	android:layout_width="0dp">
+	        </Button>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

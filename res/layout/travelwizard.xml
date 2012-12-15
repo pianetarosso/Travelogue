@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/main_spaces" 
+			android:layout_width="wrap_content"
+			android:text="@string/travelName">
+		</TextView>
+
+		<EditText 
+			android:layout_height="wrap_content" 
+			android:id="@+id/editTextNomeViaggio"
+			android:layout_width="fill_parent" 
+			android:layout_marginLeft="@dimen/main_spaces"
+			android:layout_marginRight="@dimen/main_spaces"
+			android:layout_marginBottom="@dimen/main_spaces">
+		</EditText>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/main_spaces" 
+			android:layout_width="wrap_content"
+			android:text="@string/description">
+		</TextView>
+
+		<EditText
+		    android:id="@+id/editTextDescrizioneViaggio"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginBottom="@dimen/main_spaces"
+		    android:layout_marginLeft="@dimen/main_spaces"
+		    android:layout_marginRight="@dimen/main_spaces"
+		    android:editable="true"
+		    android:gravity="top"
+		    android:isScrollContainer="true"
+		    android:lines="5"
+		    android:maxLength="250"
+		    android:maxLines="8"
+		    android:scrollbars="vertical" >
+
+		</EditText>
+		
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/main_spaces" 
+			android:layout_width="wrap_content"
+			android:text="@string/data_partenza"
+			android:id="@+id/checkBox_enable_start">
+		</CheckBox>
+		
+		<DatePicker 
+			android:layout_margin="@dimen/main_spaces" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/datePicker1" 
+			android:layout_width="fill_parent">
+		</DatePicker>
+		
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/main_spaces" 
+			android:layout_width="wrap_content"
+			android:text="@string/enable_timer"
+			android:id="@+id/checkBox_enable_timer">
+		</CheckBox>
+		
+		<TimePicker
+		    android:layout_margin="@dimen/main_spaces" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/timePicker1" 
+			android:layout_width="fill_parent">
+		</TimePicker>	
+		
+		<Button 
+			android:id="@+id/button1" 
+			android:layout_width="fill_parent"
+			android:layout_gravity="center" 
+			android:layout_height="fill_parent"
+			android:layout_margin="@dimen/main_spaces" 
+			android:text="@string/save" 
+			android:onClick="saveData">
+		</Button>
+	</LinearLayout>
+</ScrollView>
+
+
